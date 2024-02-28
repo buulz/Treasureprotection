@@ -309,7 +309,7 @@ def game_over(time_start, win, BUDGET, current_screen):
     time_text = font.render(f'Вы продержались {time_passed} {seconds_text}!', True, (0, 0, 0))
     # Выводим текст на экран
     win.blit(time_text, (WIDTH // 2 - time_text.get_width() // 2, HEIGHT // 3 - text.get_height() // 3))
-    # Создаем кнопку "Заново"
+    # Создаем кнопку Заново
     restart_button = Button(WIDTH // 2 - 70, HEIGHT // 2.2, 140, 50, 'Заново', loading_screen)
     restart_button.draw(win)
 
@@ -334,7 +334,7 @@ def show_info_screen():
     current_screen = 'info'
     # Выводим изображение info_screen_img на экран
     win.blit(info_screen_img, (140, 30))
-    # Создаем кнопку "Обратно" с координатами и размерами, и привязываем ее к функции loading_screen
+    # Создаем кнопку Обратно с координатами и размерами, и привязываем ее к функции loading_screen
     back_button = Button(WIDTH // 2 - 70, HEIGHT // 2 + 110, 140, 50, 'Обратно', loading_screen)
     back_button.draw(win)
     pygame.display.update()
